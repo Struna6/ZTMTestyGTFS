@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4972BC2E0DE8C3734B64AE7 /* Pods_ZTMTestyGTFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8E276D234C8B656789DD26 /* Pods_ZTMTestyGTFS.framework */; };
 		F9B61125231D4F23004B20CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B61124231D4F23004B20CD /* AppDelegate.swift */; };
 		F9B61127231D4F23004B20CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B61126231D4F23004B20CD /* ViewController.swift */; };
 		F9B6112A231D4F23004B20CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B61128231D4F23004B20CD /* Main.storyboard */; };
 		F9B6112C231D4F24004B20CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B6112B231D4F24004B20CD /* Assets.xcassets */; };
 		F9B6112F231D4F24004B20CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B6112D231D4F24004B20CD /* LaunchScreen.storyboard */; };
+		F9B61139231D5EF5004B20CD /* gtfs-realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B61138231D5EF5004B20CD /* gtfs-realtime.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C6AC45AA5D79BFB35F00972 /* Pods-ZTMTestyGTFS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTMTestyGTFS.debug.xcconfig"; path = "Target Support Files/Pods-ZTMTestyGTFS/Pods-ZTMTestyGTFS.debug.xcconfig"; sourceTree = "<group>"; };
+		61559531B5626BF8EA36E1B5 /* Pods-ZTMTestyGTFS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTMTestyGTFS.release.xcconfig"; path = "Target Support Files/Pods-ZTMTestyGTFS/Pods-ZTMTestyGTFS.release.xcconfig"; sourceTree = "<group>"; };
+		EF8E276D234C8B656789DD26 /* Pods_ZTMTestyGTFS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTMTestyGTFS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B61121231D4F23004B20CD /* ZTMTestyGTFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTMTestyGTFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B61124231D4F23004B20CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B61126231D4F23004B20CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F9B6112B231D4F24004B20CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9B6112E231D4F24004B20CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9B61130231D4F24004B20CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B61138231D5EF5004B20CD /* gtfs-realtime.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "gtfs-realtime.pb.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4972BC2E0DE8C3734B64AE7 /* Pods_ZTMTestyGTFS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25BFC196519D711313933176 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C6AC45AA5D79BFB35F00972 /* Pods-ZTMTestyGTFS.debug.xcconfig */,
+				61559531B5626BF8EA36E1B5 /* Pods-ZTMTestyGTFS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56FA81BD16BC6B5BD667D476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF8E276D234C8B656789DD26 /* Pods_ZTMTestyGTFS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9B61118231D4F23004B20CD = {
 			isa = PBXGroup;
 			children = (
 				F9B61123231D4F23004B20CD /* ZTMTestyGTFS */,
 				F9B61122231D4F23004B20CD /* Products */,
+				25BFC196519D711313933176 /* Pods */,
+				56FA81BD16BC6B5BD667D476 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		F9B61123231D4F23004B20CD /* ZTMTestyGTFS */ = {
 			isa = PBXGroup;
 			children = (
+				F9B61138231D5EF5004B20CD /* gtfs-realtime.pb.swift */,
 				F9B61124231D4F23004B20CD /* AppDelegate.swift */,
 				F9B61126231D4F23004B20CD /* ViewController.swift */,
 				F9B61128231D4F23004B20CD /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9B61133231D4F24004B20CD /* Build configuration list for PBXNativeTarget "ZTMTestyGTFS" */;
 			buildPhases = (
+				86C7D3869CFB9FC960E683DC /* [CP] Check Pods Manifest.lock */,
 				F9B6111D231D4F23004B20CD /* Sources */,
 				F9B6111E231D4F23004B20CD /* Frameworks */,
 				F9B6111F231D4F23004B20CD /* Resources */,
+				D1F172630816B86B2F40DA67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86C7D3869CFB9FC960E683DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZTMTestyGTFS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F172630816B86B2F40DA67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZTMTestyGTFS/Pods-ZTMTestyGTFS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZTMTestyGTFS/Pods-ZTMTestyGTFS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZTMTestyGTFS/Pods-ZTMTestyGTFS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9B6111D231D4F23004B20CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +208,7 @@
 			files = (
 				F9B61127231D4F23004B20CD /* ViewController.swift in Sources */,
 				F9B61125231D4F23004B20CD /* AppDelegate.swift in Sources */,
+				F9B61139231D5EF5004B20CD /* gtfs-realtime.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +352,7 @@
 		};
 		F9B61134231D4F24004B20CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6AC45AA5D79BFB35F00972 /* Pods-ZTMTestyGTFS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +371,7 @@
 		};
 		F9B61135231D4F24004B20CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61559531B5626BF8EA36E1B5 /* Pods-ZTMTestyGTFS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
